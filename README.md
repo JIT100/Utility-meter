@@ -35,7 +35,7 @@ git clone https://github.com/JIT100/Utility-meter.git
 
 * Give **SECRET_KEY** ( You can generate one secret key & assign it to this variable ) in ```.env``` file & put ```.env``` in ```.gitignore``` file.
 
-* Make sure to update the end of line sequence for entrypoint.sh set to **LF** in your code editor.
+* Make sure to update the end of line sequence for ```entrypoint.sh``` set to **LF** in your code editor.
 
 - ##### **Building the Docker Containers**
     To build the Docker containers for the application, run:
