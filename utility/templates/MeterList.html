@@ -1,0 +1,25 @@
+
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+  <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+    <div class="card text-center w-25" style="box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);border-radius: 30px;overflow:hidden">
+        <div class="card-header" style="background-color: #0c0005; color: white;">
+            UTILITY METER
+        </div>
+        <div class="card-body">
+            <!-- <h5 class="card-title"> ALL METERS </h5> -->
+            <div class="list-group">
+                {% for meter in meters_data %}
+                <p class="fs-5"><a href="{% url 'meter-detail' meter.id %}" class="list-group-item list-group-item-action">{{ meter.label }}</a></p>
+                {% endfor %}
+              </div>
+        </div>
+
+        <div class="card-footer text-muted" style="background-color: #ce8908e3; color: white;">
+        </div>
+    </div>
+</div>
+{% endblock %}
